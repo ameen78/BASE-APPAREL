@@ -1,0 +1,70 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+    padding: 20px;
+    text-align: center;
+}
+.base h3{
+    height: 20vh;
+    width: 20.5vw;
+    padding: 40px 0 0 0;
+    letter-spacing: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3 b{
+    padding:0 55px 0 0 ;
+}
+.soon h1{
+    color: rgb(180, 152, 157);
+    font-weight: lighter;
+    font-size: 2.5rem;
+    height: 24vh;
+    width: 24vw;
+    letter-spacing: 10px ;
+}
+h1 b{
+    padding: 0 0 0 90px ;
+    color: black;
+}
+.soon p{
+    height: 20vh;
+    font-size: 1rem;
+    max-width: 450px;
+    text-align: start;
+    padding: 0 0 0 110px;
+    font-style: italic;
+    color: rgb(180, 152, 157);
+    width: 30vw;
+}
+.user{
+    width: 77vh;
+}
+.user input{
+  width: 17vw;
+  height: 5vh;
+  border: 1px ridge rgb(197, 190, 190);
+  padding: 0 0 0 10px;
+  border-radius: 1rem;
+}
+button {
+    width: 4vw;
+    height: 5vh;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(250, 81, 109);
+    color: white;
+}
+.common{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    width: 74vw;
+    height: 92vh;
+}
+img{
+    height: 91.7vh;
+    width: 37.5vw;
+}
