@@ -1,70 +1,86 @@
-* {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
-body{
-    padding: 20px;
-    text-align: center;
-}
-.base h3{
-    height: 20vh;
-    width: 20.5vw;
-    padding: 40px 0 0 0;
-    letter-spacing: 4px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-h3 b{
-    padding:0 55px 0 0 ;
-}
+ .logo{
+     height: 29vh;
+     width: 30vw;
+     text-align: center;
+     position: relative;
+     top: 50px;
+     left: 62px;
+ }
+ .logo img{
+     height: 7vh;
+ }
 .soon h1{
-    color: rgb(180, 152, 157);
+    font-size: 3.5rem;
     font-weight: lighter;
-    font-size: 2.5rem;
-    height: 24vh;
-    width: 24vw;
-    letter-spacing: 10px ;
+    width: 60vw;
+    height: 33vh;
+    text-align: center;
+    max-width: 280px;
+    position: relative;
+    top: 10px;
+    left: 180px;
+    letter-spacing: 20px;
+    color: rgb(201, 148, 157);
 }
-h1 b{
-    padding: 0 0 0 90px ;
+.soon h1 b{
+    margin-left: 15px;
     color: black;
 }
 .soon p{
-    height: 20vh;
-    font-size: 1rem;
-    max-width: 450px;
-    text-align: start;
-    padding: 0 0 0 110px;
-    font-style: italic;
-    color: rgb(180, 152, 157);
-    width: 30vw;
+  font-size: 30px;
+  font-style: italic;
+  width: 36vw;
+  height: 35vh;
+  text-align: left;
+  max-width: 460px;
+  position: relative;
+  top: 10px;
+  left: 195px;
+  color:  rgb(201, 148, 157);;
 }
-.user{
-    width: 77vh;
+.mail{
+    height: 30vh;
+    width: 60vw;
 }
-.user input{
-  width: 17vw;
-  height: 5vh;
-  border: 1px ridge rgb(197, 190, 190);
-  padding: 0 0 0 10px;
-  border-radius: 1rem;
-}
-button {
-    width: 4vw;
+.mail input{
+    width: 22vw;
     height: 5vh;
-    border: none;
+    position: relative;
+    top: 10px;
+    left: 190px;
     border-radius: 1rem;
-    background-color: rgb(250, 81, 109);
-    color: white;
+    border: 1px ridge;
+    padding-left: 20px;
+    font-size: 1rem ;
 }
-.common{
+button{
+    position: relative;
+    top: 13px;
+    left: 130px;
+    width: 5vw;
+    height: 4.9vh;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(201, 148, 157);
+    color: white;
+    font-size: 1.5rem;
+}
+.hero{
+    width: 100vw;
+    height: 100%;
+}
+body{
     display: flex;
     justify-content: center;
-    border: 1px solid;
-    width: 74vw;
-    height: 92vh;
 }
-img{
-    height: 91.7vh;
-    width: 37.5vw;
+.hero img{
+    width: 43vw;
+    height: 129vh;
+    position: relative;
+    right: 5px ;
 }
