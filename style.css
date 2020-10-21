@@ -3,84 +3,147 @@
     margin: 0px;
     box-sizing: border-box;
 }
- .logo{
-     height: 29vh;
-     width: 30vw;
-     text-align: center;
-     position: relative;
-     top: 50px;
-     left: 62px;
- }
- .logo img{
-     height: 7vh;
- }
-.soon h1{
-    font-size: 3.5rem;
-    font-weight: lighter;
-    width: 60vw;
-    height: 33vh;
+body{
+    font-family: sans-serif;
     text-align: center;
-    max-width: 280px;
-    position: relative;
-    top: 10px;
-    left: 180px;
-    letter-spacing: 20px;
-    color: rgb(201, 148, 157);
+}
+header{
+    width: 50%;
+}
+.logo{
+    height: 12vh;
+    background-color: white;
+}
+.soon{
+    color: #ce8c96;
+    text-align: center;
+}
+.soon h1{
+    font-weight: lighter;
 }
 .soon h1 b{
-    margin-left: 15px;
-    color: black;
+    color: rgb(54, 51, 51);
 }
-.soon p{
-  font-size: 30px;
-  font-style: italic;
-  width: 36vw;
-  height: 35vh;
-  text-align: left;
-  max-width: 460px;
-  position: relative;
-  top: 10px;
-  left: 195px;
-  color:  rgb(201, 148, 157);;
+@media only screen and (min-width:320px){
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo img{
+        position: relative;
+        left: 20px;
+        width:36vw;
+    }
+    .hero{
+        display: none;
+    }
+    .mobile img {
+        width: 100vw;
+    }
+    .soon{
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .soon h1{
+        letter-spacing: 15px;
+    }
+    .soon p{
+        font-style: italic;
+        font-size: 15px;
+        max-width: 80vw;
+        align-self: center;
+    }
+    .mail input{
+        height: 5vh;
+        width: 67vw;
+        border-radius: 1rem;
+        border: 1px ridge;
+        padding-left: 7px;
+    }
+    button{
+        width: 17vw;
+        height: 5vh;
+        border: none;
+        font-size: 1rem;
+        background-color: rgb(214, 148, 158);
+        color: white;
+        border-radius: 1rem;
+        margin-left:-7% ;
+    }
+} 
+@media only screen and (min-width:768px){
+    .logo img{
+        width: 42vw;
+    }
+    .logo{
+        height: 15vh;
+    }
+    .mobile img{
+     width: 100vw;
+    }
+    .soon{
+        height: 70vh;
+    }
+    .soon h1{
+        font-size: 2.5rem;
+        letter-spacing: 20px;
+    }
+    .soon p{
+     font-size: 20px;
+     max-width: 70%;
+     align-self: center;  
+    }
+    .mail input {
+        width:44vw ;
+        height: 5.7vh;
+        font-size: 1rem;
+    }
+    button{
+        width: 10vw;
+        height: 6vh;
+    }
 }
-.mail{
-    height: 30vh;
-    width: 60vw;
-}
-.mail input{
-    width: 22vw;
-    height: 5vh;
-    position: relative;
-    top: 10px;
-    left: 190px;
-    border-radius: 1rem;
-    border: 1px ridge;
-    padding-left: 20px;
-    font-size: 1rem ;
-}
-button{
-    position: relative;
-    top: 13px;
-    left: 130px;
-    width: 5vw;
-    height: 4.9vh;
-    border-radius: 1rem;
-    border: none;
-    background-color: rgb(201, 148, 157);
-    color: white;
-    font-size: 1.5rem;
-}
-.hero{
-    width: 100vw;
-    height: 100%;
-}
-body{
-    display: flex;
-    justify-content: center;
-}
-.hero img{
-    width: 43vw;
-    height: 129vh;
-    position: relative;
-    right: 5px ;
+@media only screen and (min-width:1024px){
+    .mobile img{
+        display: none;
+    }
+    .hero {
+        background-image: url(/images/hero-desktop.jpg);
+        background-size: cover;
+    }
+    .logo{
+        height: 35vh;
+        width: 38vw;
+    }
+    .logo img{
+        width: 19vw;
+        align-self: center;
+    }
+    .soon h1{
+        font-size: 3rem;
+        text-align: left;
+        align-self: center;
+    }
+    .soon p{
+        font-size: 25px;
+        text-align: center;
+        max-width: 60%;
+    }
+    .mail input{
+        width: 32vw;
+        border-radius: 1.5rem;
+        padding-left: 12px;
+        font-size: 1.3rem;
+    }
+    button{
+        width: 8vw;
+        border-radius: 1.5rem;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    }
 }
