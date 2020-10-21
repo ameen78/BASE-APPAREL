@@ -35,13 +35,16 @@ header{
         left: 20px;
         width:36vw;
     }
-    .hero{
-        display: none;
+    .mobile{
+      width: 100%; 
     }
     .mobile img {
         width: 100vw;
+        object-fit: contain;
     }
     .soon{
+        width: 100vw;
+        align-items: center;
         height: 55vh;
         display: flex;
         flex-direction: column;
@@ -88,49 +91,57 @@ header{
         height: 70vh;
     }
     .soon h1{
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         letter-spacing: 20px;
     }
     .soon p{
-     font-size: 20px;
+     font-size: 24px;
      max-width: 70%;
      align-self: center;  
     }
     .mail input {
         width:44vw ;
         height: 5.7vh;
-        font-size: 1rem;
+        font-size: 1.1rem;
+        border-radius: 2rem;
     }
     button{
-        width: 10vw;
+        width: 8vw;
         height: 6vh;
+        border-radius: 2rem;
     }
 }
 @media only screen and (min-width:1024px){
     .mobile img{
         display: none;
     }
-    .hero {
+    .desktop {
+        width: 50vw;
+        height: 125vh;
         background-image: url(/images/hero-desktop.jpg);
         background-size: cover;
     }
     .logo{
         height: 35vh;
-        width: 38vw;
+        width: 34vw;
     }
     .logo img{
-        width: 19vw;
+        width: 21vw;
         align-self: center;
     }
+    .soon{
+        width: 100%;
+        height: 90vh;
+    }
     .soon h1{
-        font-size: 3rem;
+        font-size: 3.3rem;
         text-align: left;
         align-self: center;
     }
     .soon p{
-        font-size: 25px;
+        font-size: 27px;
         text-align: center;
-        max-width: 60%;
+        max-width: 70%;
     }
     .mail input{
         width: 32vw;
@@ -139,11 +150,65 @@ header{
         font-size: 1.3rem;
     }
     button{
-        width: 8vw;
+        width: 7vw;
         border-radius: 1.5rem;
     }
     body{
         display: flex;
         justify-content: center;
+    }
+}
+@media only screen and (min-width:1400px){
+    .logo{
+        height: 40vh;
+    }
+    .logo img{
+        width: 23vw;
+    }
+    .soon h1 {
+        position: relative;
+        right: 46px;
+        font-size: 3.7rem;
+    }
+    .soon p{
+         font-size: 30px;
+         max-width: 73%;
+    }
+    .mail input {
+        font-size: 1.4rem;
+        font-size: 1.6rem;
+    }
+    button{
+        border-radius: 1.6rem;
+        width: 6vw;
+    }
+    .desktop{
+        height: 130vh;
+    }
+}
+@media only screen and (min-width:2500px){
+    .soon{
+       height: 90vh;
+    }
+    .soon h1{
+        font-size: 8.5rem;
+        position: relative;
+        right: 78px;
+    }
+    .soon p{
+        font-size: 3.5rem;
+        max-width: 78%;
+    }
+    .mail input{
+        border: 1.7px ridge;
+        border-radius: 3rem;
+        font-size: 2.6rem;
+    }
+    button{
+        font-size: 3rem;
+        border-radius: 3rem;
+    }
+    .desktop{
+        height: 130vh;
     }
 }
