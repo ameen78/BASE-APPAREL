@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     text-align: center;
 }
 header{
@@ -13,80 +13,80 @@ header{
 .logo{
     height: 12vh;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.logo img{
+    width:36vw;
+}
+.mobile{
+    background: url(./images/hero-mobile.jpg) no-repeat ;
+    background-size: contain;
+    width: 100vw;
+     height: 52vh;
+
+}
+/* .mobile{
+    width: 90vw; 
+  } */
+  /* .mobile img {
+      width: 100vw;
+      object-fit: contain;
+  } */
 .soon{
     color: #ce8c96;
     text-align: center;
+    width: 100vw;
+    align-items: center;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.soon p{
+    font-size: 15px;
+    max-width: 80vw;
+    /* align-self: center; */
 }
 .soon h1{
     font-weight: lighter;
+    letter-spacing: 15px;
 }
 .soon h1 b{
     color: rgb(54, 51, 51);
 }
-@media only screen and (min-width:320px){
-    .logo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .logo img{
-        position: relative;
-        left: 20px;
-        width:36vw;
-    }
-    .mobile{
-      width: 100%; 
-    }
-    .mobile img {
-        width: 100vw;
-        object-fit: contain;
-    }
-    .soon{
-        width: 100vw;
-        align-items: center;
-        height: 55vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .soon h1{
-        letter-spacing: 15px;
-    }
-    .soon p{
-        font-style: italic;
-        font-size: 15px;
-        max-width: 80vw;
-        align-self: center;
-    }
-    .mail input{
-        height: 5vh;
-        width: 67vw;
-        border-radius: 1rem;
-        border: 1px ridge;
-        padding-left: 7px;
-    }
-    button{
-        width: 17vw;
-        height: 5vh;
-        border: none;
-        font-size: 1rem;
-        background-color: rgb(214, 148, 158);
-        color: white;
-        border-radius: 1rem;
-        margin-left:-7% ;
-    }
-} 
+.mail input{
+    height: 6vh;
+    width: 67vw;
+    border-radius: 1rem;
+    border: 1px ridge;
+    padding-left: 7px;
+}
+button{
+    width: 15vw;
+    height: 6.5vh;
+    border: none;
+    font-size: 1.2rem;
+    background-color: rgb(214, 148, 158);
+    border-radius: 1rem;
+    margin: 20px 0 0 -32px ;
+}
 @media only screen and (min-width:768px){
     .logo img{
-        width: 42vw;
+        width: 22vw;
     }
     .logo{
         height: 15vh;
+        width: 32vw;
     }
-    .mobile img{
+    .mobile{
+        height: 95vh;
+    }
+    /* .mobile img{
      width: 100vw;
-    }
+    } */
     .soon{
         height: 70vh;
     }
@@ -101,18 +101,19 @@ header{
     }
     .mail input {
         width:44vw ;
-        height: 5.7vh;
+        height: 7.7vh;
         font-size: 1.1rem;
         border-radius: 2rem;
+        padding-left: 20px;
     }
     button{
         width: 8vw;
-        height: 6vh;
+        height: 7.7vh;
         border-radius: 2rem;
     }
 }
 @media only screen and (min-width:1024px){
-    .mobile img{
+    .mobile {
         display: none;
     }
     .desktop {
@@ -145,13 +146,13 @@ header{
     }
     .mail input{
         width: 32vw;
-        border-radius: 1.5rem;
+        border-radius: 2rem;
         padding-left: 12px;
         font-size: 1.3rem;
     }
     button{
         width: 7vw;
-        border-radius: 1.5rem;
+        border-radius: 2rem;
     }
     body{
         display: flex;
@@ -160,10 +161,10 @@ header{
 }
 @media only screen and (min-width:1400px){
     .logo{
-        height: 40vh;
+        height: 30vh;
     }
     .logo img{
-        width: 23vw;
+        width: 19vw;
     }
     .soon h1 {
         position: relative;
@@ -177,10 +178,13 @@ header{
     .mail input {
         font-size: 1.4rem;
         font-size: 1.6rem;
+        border-radius: 4rem;
+        padding-left: 18px;
     }
     button{
         border-radius: 1.6rem;
         width: 6vw;
+        border-radius: 4rem;
     }
     .desktop{
         height: 130vh;
