@@ -40,7 +40,7 @@ header{
     text-align: center;
     width: 100vw;
     align-items: center;
-    height: 55vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -57,10 +57,13 @@ header{
 .soon h1 b{
     color: rgb(54, 51, 51);
 }
+.mail{
+    height: 20vh;
+}
 .mail input{
     height: 6vh;
     width: 67vw;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     border: 1px ridge;
     padding-left: 7px;
 }
@@ -70,7 +73,7 @@ button{
     border: none;
     font-size: 1.2rem;
     background-color: rgb(214, 148, 158);
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     margin: 20px 0 0 -32px ;
 }
 @media only screen and (min-width:768px){
@@ -157,6 +160,7 @@ button{
     body{
         display: flex;
         justify-content: center;
+        background: url(./images/bg-pattern-desktop.svg) no-repeat;
     }
 }
 @media only screen and (min-width:1400px){
